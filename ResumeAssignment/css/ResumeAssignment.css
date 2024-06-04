@@ -1,0 +1,76 @@
+/*TEMURBEK FARMONOV
+ResumeAssignment 
+6/1/2024          */
+/* COLORS USED 
+
+#3D5A80-YlnMn Blue
+#98C1D9-Powderblue
+#E0FBFC-Light Cyan
+#EE6C4D-Burnt Sienna
+#293241-GUNMETAL
+*/
+
+/* GLOBAL STYLES
+---------------------------------*/
+body {
+    background: #92C9B1;
+
+}
+/* links */
+a {
+    color: #3D5A80;
+}
+
+a:hover {
+    color: white;
+}
+
+footer a {
+    color: #EE6C4D;
+
+}
+
+footer a:hover {
+    color: #3D5A80;
+}
+
+.btn {
+    background: #EE6C4D;
+    color: #E0FBFC;
+    text-decoration: none;
+}
+
+
+/* HOME
+---------------------------------*/
+.home {
+    background: url(../placeholderimages/joanna-kosinska-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.6);
+}
+
+/* RESUME
+------------------------------------*/
+
+/* PROFILE
+---------------------------------*/
+
+/* PROJECTS
+---------------------------------*/
+
+/* WORK EXPERIENCE
+---------------------------------*/
+
+/* EDUCATION
+---------------------------------*/
+
+/* FOOTER
+---------------------------------*/
+
+footer { 
+    background:#293241;
+    color:#E0FBFC;
+}
