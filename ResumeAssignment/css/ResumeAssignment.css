@@ -62,10 +62,17 @@ footer a:hover {
 .home {
     background: url(../placeholderimages/joanna-kosinska-unsplash.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
     background: rgb(255 255 255 / 0.9);
+    padding: 30px;
 }
 
 /* RESUME
@@ -109,6 +116,13 @@ footer a:hover {
 
 /* WORK EXPERIENCE
 ---------------------------------*/
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
+
 
 /* EDUCATION
 ---------------------------------*/
@@ -119,6 +133,9 @@ footer a:hover {
 footer { 
     background:#293241;
     color:#E0FBFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .socials { 
@@ -132,4 +149,9 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
