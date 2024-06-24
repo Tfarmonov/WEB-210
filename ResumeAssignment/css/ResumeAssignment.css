@@ -14,6 +14,7 @@ ResumeAssignment
 ---------------------------------*/
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *, *:before,*:after {
@@ -21,12 +22,36 @@ html {
 }
 
 html,body {
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Noto Sans", sans-serif;
     background: #92C9B1;
     margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Martian Mono", monospace;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+
+h2 { 
+    font-size: 3.6rem;
+}
+
+h3 { 
+    font-size: 2.4rem;
 }
 /* links */
 a {
@@ -50,6 +75,13 @@ footer a:hover {
     background: #EE6C4D;
     color: #E0FBFC;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 4px;
 }
 
 .content-wrapper {
@@ -58,13 +90,78 @@ footer a:hover {
     max-width: 900px;
 }
 
-h1, h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+nav {
+    width: 100%;
+    background-color: #293241;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+nav ul {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 20px 20px;
+    background: #fff;
+    cursor: pointer;
+    width: 155px;
+    border-radius: 4px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #293241;
+    display: block;
+    font-size: small;
+}
+
+nav ul li:hover > a {
+    color: #98C1D9;
+}
+
+nav ul li:hover {
+    background: #fff;
+    color: #293241;
+}
+
+nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: -10000px;
+    width: 150px;
+}
+
+nav ul li ul li {
+    background: #fff;
+    display: block;
+    color: #293241;
+}
+
+nav ul li ul li:hover { 
+    background: #E0FBFC;
+}
+
+nav ul li:hover ul {
+    display: block;
+    left: 0px;
+    width: auto;
+}
+/*Had to add NAV TO EVERYTHING TO STOP IT FROM AFFECTING THE FOOTER, ALSO ADDED EVERYTHING TO GLOBAL SECTION BECAUSE THIS NAV BAR WOULD BE ON EACH PAGE*/
 /* HOME
 ---------------------------------*/
 .home {
-    background: url(../placeholderimages/joanna-kosinska-unsplash.jpg) no-repeat;
+    background: url(../placeholderimages/annie-spratt-unsplash.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -99,8 +196,10 @@ h1, h2 {
 
   .Download-link {
     position: fixed;
-    top: 5px;
+    top: 20px;
     left: 5px;
+    z-index: 1000;
+    font-size: 1.5rem;
   }
 /* PROFILE
 ---------------------------------*/
@@ -124,12 +223,27 @@ h1, h2 {
     display: grid;
     grid-template-columns: 300px 1fr;
     column-gap: 20px;
+    margin: 30px 0;
 }
 
+.work-details p {
+    margin: 0;
+}
+
+.work-summary p:first-child {
+    margin-top: 0;
+}
 
 
 /* EDUCATION
 ---------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item p {
+    margin: 0;
+}
 
 /* FOOTER
 ---------------------------------*/
